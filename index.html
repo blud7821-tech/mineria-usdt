@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Minería USDT</title>
+  <style>
+    body {
+      background: black;
+      color: #00ffcc;
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      background: #00ffcc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💰 Minería USDT</h1>
+
+  <input id="nombre" placeholder="Tu nombre">
+  <br>
+  <button onclick="iniciar()">Iniciar</button>
+
+  <h2 id="resultado"></h2>
+
+  <script>
+    function iniciar() {
+      let nombre = document.getElementById("nombre").value;
+      document.getElementById("resultado").innerText =
+        "Bienvenido " + nombre + " 🚀 Minando USDT...";
+    }
+  </script>
+
+</body>
+</html>
